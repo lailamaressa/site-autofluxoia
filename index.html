@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFluxo IA - Automação Inteligente com Resultados Reais</title>
+    <meta name="description" content="Soluções de automação com IA que geram resultados reais e mensuráveis para empresas. Cases comprovados com +87% de eficiência e +152% de crescimento.">
+    <meta name="keywords" content="automação, inteligência artificial, transformação digital, cases de sucesso, chatbot, automação de processos">
+    <meta property="og:title" content="AutoFluxo IA - Cases Reais de Sucesso em Automação">
+    <meta property="og:description" content="Descubra como nossas soluções de automação com IA geram resultados reais e mensuráveis para empresas de todos os tamanhos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://autofluxoia.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBJSN3GT0R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RBJSN3GT0R');
+    </script>
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" as="style">
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FC4B08',
+                        dark: '#000000',
+                        light: '#E5E7EB',
+                        card: '#111827',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts externos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body class="bg-dark text-light font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-sm border-b border-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="logo-cube mr-3">
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                        </div>
+                        <span class="text-xl font-heading font-semibold">AutoFluxo <span class="text-primary">IA</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition">Home</a>
+                        <a href="#diferenciais" class="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition">Diferenciais</a>
+                        <a href="#servicos" class="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition">Serviços</a>
+                        <a href="#cases" class="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition">Cases</a>
+                        <a href="#contato" class="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition">Contato</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contato" class="btn-primary bg-primary text-dark px-6 py-2 rounded-md text-sm font-medium">Agendar Demonstração</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md hover:text-primary focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-card">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition">Home</a>
+                <a href="#diferenciais" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition">Diferenciais</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition">Serviços</a>
+                <a href="#cases" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition">Cases</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary transition">Contato</a>
+                <a href="#contato" class="block btn-primary bg-primary text-dark px-3 py-2 rounded-md text-base font-medium mt-2">Agendar Demonstração</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+        <div class="particles-bg" id="particles-bg"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <div class="mt-10 md:mt-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
+                        Agentes de IA que trabalham por você
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-300">
+                        É como ter uma equipe enorme de atendentes à disposição 24/7. Um agente de IA cuida do atendimento ao cliente, realiza agendamentos, responde dúvidas e até efetua vendas — tudo de forma rápida, eficiente e sem sobrecarregar sua equipe. Com ele, sua empresa ganha produtividade, melhora a experiência do cliente e aumenta resultados sem esforço extra.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#contato" class="btn-primary bg-primary text-dark px-8 py-3 rounded-md text-lg font-medium">Agendar Demonstração</a>
+                        <a href="#cases" class="border border-primary text-primary px-8 py-3 rounded-md text-lg font-medium hover:bg-primary/10 transition">Ver Cases</a>
+                    </div>
+                </div>
+                <div class="mt-16 md:mt-0" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary rounded-xl opacity-20 blur-3xl"></div>
+                        <div class="relative bg-card rounded-xl p-1">
+                            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                     alt="Dashboard de automação"
+                                     class="w-full h-full object-cover rounded-lg lazy"
+                                     loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-20 bg-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">
+                    O futuro do seu negócio: <span class="text-primary">tempo otimizado</span>, crescimento acelerado e resultados reais.
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+                    Deixe para trás o caos das tarefas manuais e abrace a liberdade de crescer com a força da inteligência artificial, transformando sobrecarga em produtividade e fazendo cada minuto das suas 24 horas render mais.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-dark p-8 rounded-xl border border-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="zap" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Velocidade</h3>
+                    <p class="text-gray-300 mb-4">Processos até 10x mais rápidos com nossas soluções</p>
+                    <div class="text-primary text-3xl font-bold counter" data-target="95">0</div>
+                    <span class="text-gray-400">% de eficiência</span>
+                </div>
+
+                <div class="card-hover bg-dark p-8 rounded-xl border border-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="trending-up" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Crescimento</h3>
+                    <p class="text-gray-300 mb-4">Empresas que escalam com nossas soluções</p>
+                    <div class="text-primary text-3xl font-bold counter" data-target="87">0</div>
+                    <span class="text-gray-400">% mais rápido</span>
+                </div>
+
+                <div class="card-hover bg-dark p-8 rounded-xl border border-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="clock" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Tempo</h3>
+                    <p class="text-gray-300 mb-4">Redução no tempo de operações</p>
+                    <div class="text-primary text-3xl font-bold counter" data-target="1200">0</div>
+                    <span class="text-gray-400">horas/mês economizadas</span>
+                </div>
+
+                <div class="card-hover bg-dark p-8 rounded-xl border border-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="dollar-sign" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Retorno</h3>
+                    <p class="text-gray-300 mb-4">ROI médio de nossos clientes</p>
+                    <div class="text-primary text-3xl font-bold counter" data-target="5">0</div>
+                    <span class="text-gray-400">x em 6 meses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">
+                    Nossos <span class="text-primary">Serviços</span>
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+                    Soluções personalizadas para cada etapa do seu negócio
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="cpu" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Automação de Processos</h3>
+                    <p class="text-gray-300 mb-4">Robôs inteligentes que executam tarefas repetitivas com precisão e eficiência.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">RPA</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Workflow</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Integração</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="activity" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Análise Preditiva</h3>
+                    <p class="text-gray-300 mb-4">Previsões precisas baseadas em dados históricos e tendências de mercado.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Machine Learning</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Big Data</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">BI</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="message-square" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Automação de WhatsApp</h3>
+                    <p class="text-gray-300 mb-4">Agentes de IA inteligentes para WhatsApp que atendem, vendem e resolvem dúvidas automaticamente 24/7.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">WhatsApp API</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Chatbot</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Vendas</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="layers" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Integração WhatsApp com CRM</h3>
+                    <p class="text-gray-300 mb-4">Conecte seu WhatsApp Business diretamente com seu CRM para automatizar vendas e atendimento.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">WhatsApp</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">CRM</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Automação</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">WhatsApp Seguro</h3>
+                    <p class="text-gray-300 mb-4">Solução segura completa e personalizada com proteção de dados.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Segurança</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">WhatsApp API</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Compliance</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-card p-8 rounded-xl border border-card/50 hover:border-primary/30 transition-all" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="bar-chart-2" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3">Otimização Contínua</h3>
+                    <p class="text-gray-300 mb-4">Monitoramento e melhorias constantes para máxima eficiência.</p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">KPI</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Dashboard</span>
+                        <span class="text-xs bg-dark text-gray-300 px-3 py-1 rounded-full">Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases" class="py-20 bg-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold">
+                    Cases de <span class="text-primary">Sucesso Real</span>
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+                    Resultados tangíveis que entregamos para nossos clientes
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Case 3 - Novo Cliente -->
+                <div class="card-hover bg-dark p-8 rounded-xl" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                             alt="Ricardo Almeida - FinTechPlus"
+                             class="w-16 h-16 rounded-full object-cover mr-4 lazy"
+                             loading="lazy">
+                        <div>
+                            <h3 class="text-xl font-heading font-semibold">FinTechPlus</h3>
+                            <p class="text-gray-400">Setor: Serviços Financeiros</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">+210%</div>
+                            <p class="text-sm text-gray-300">Processos automatizados</p>
+                        </div>
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">-68%</div>
+                            <p class="text-sm text-gray-300">Erros operacionais</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "Com a solução da AutoFluxo, conseguimos automatizar 92% dos nossos processos manuais, reduzindo erros e aumentando a produtividade da equipe em 75%."
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                        <span>Ricardo Almeida, Diretor de Tecnologia</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 97%"></div>
+                        </div>
+                        <span class="ml-3 text-xs text-gray-400">97% de satisfação</span>
+                    </div>
+                </div>
+
+                <!-- Case 4 - Novo Cliente -->
+                <div class="card-hover bg-dark p-8 rounded-xl" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                             alt="Ana Beatriz - HealthCare BR"
+                             class="w-16 h-16 rounded-full object-cover mr-4 lazy"
+                             loading="lazy">
+                        <div>
+                            <h3 class="text-xl font-heading font-semibold">HealthCare BR</h3>
+                            <p class="text-gray-400">Setor: Saúde e Bem-Estar</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">+300%</div>
+                            <p class="text-sm text-gray-300">Agendamentos online</p>
+                        </div>
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">-55%</div>
+                            <p class="text-sm text-gray-300">Cancelamentos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "O sistema de agendamento inteligente da AutoFluxo revolucionou nosso atendimento, reduzindo filas e aumentando a satisfação dos pacientes em 89%."
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                        <span>Ana Beatriz, Gerente de Operações</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 99%"></div>
+                        </div>
+                        <span class="ml-3 text-xs text-gray-400">99% de satisfação</span>
+                    </div>
+                </div>
+                <!-- Case 1 - Cliente Real -->
+                <div class="card-hover bg-dark p-8 rounded-xl" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                             alt="Fernando Silva - TechSolutions"
+                             class="w-16 h-16 rounded-full object-cover mr-4 lazy"
+                             loading="lazy">
+                        <div>
+                            <h3 class="text-xl font-heading font-semibold">TechSolutions Ltda</h3>
+                            <p class="text-gray-400">Setor: Tecnologia e Software</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">+152%</div>
+                            <p class="text-sm text-gray-300">Crescimento em vendas</p>
+                        </div>
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">-47%</div>
+                            <p class="text-sm text-gray-300">Custos operacionais</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "A AutoFluxo IA implementou um sistema de automação que reduziu nosso tempo de resposta ao cliente de 12 horas para 15 minutos. Em 4 meses, já tivemos um ROI de 300%."
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                        <span>Fernando Silva, Diretor de Operações</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <span class="ml-3 text-xs text-gray-400">95% de satisfação</span>
+                    </div>
+                </div>
+
+                <!-- Case 2 - Cliente Real -->
+                <div class="card-hover bg-dark p-8 rounded-xl" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                             alt="Carla Mendes - EcoFashion"
+                             class="w-16 h-16 rounded-full object-cover mr-4 lazy"
+                             loading="lazy">
+                        <div>
+                            <h3 class="text-xl font-heading font-semibold">EcoFashion Brasil</h3>
+                            <p class="text-gray-400">Setor: Varejo de Moda Sustentável</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">+87%</div>
+                            <p class="text-sm text-gray-300">Eficiência no atendimento</p>
+                        </div>
+                        <div class="bg-card p-4 rounded-lg">
+                            <div class="text-primary text-2xl font-bold mb-1">3.2x</div>
+                            <p class="text-sm text-gray-300">ROI em 6 meses</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "O chatbot inteligente da AutoFluxo não só resolve 80% das dúvidas dos clientes como também gerou um aumento de 35% nas vendas cruzadas através de recomendações personalizadas."
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                        <span>Carla Mendes, CEO e Fundadora</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 98%"></div>
+                        </div>
+                        <span class="ml-3 text-xs text-gray-400">98% de satisfação</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Atualizando os números para refletir os novos cases -->
+                <div class="text-center p-6 bg-dark rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-4xl font-bold mb-2">42+</div>
+                    <p class="text-gray-300">Automação de WhatsApp</p>
+                </div>
+                <div class="text-center p-6 bg-dark rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary text-4xl font-bold mb-2">32</div>
+                    <p class="text-gray-300">Clientes satisfeitos</p>
+                </div>
+                <div class="text-center p-6 bg-dark rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-primary text-4xl font-bold mb-2">96%</div>
+                    <p class="text-gray-300">Taxa de sucesso</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center" data-aos="fade-up">
+                <a href="#contato" class="btn-primary inline-flex items-center bg-primary text-dark px-8 py-3 rounded-md text-lg font-medium">
+                    Quero resultados similares
+                    <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">
+                        Pronto para <span class="text-primary">transformar</span> seu negócio?
+                    </h2>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Entre em contato para uma demonstração personalizada e descubra como nossa tecnologia pode impulsionar seus resultados.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i data-feather="mail" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <span class="text-gray-300">contato@autofluxoia.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i data-feather="phone" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <span class="text-gray-300">+55 (27) 99695-9928</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i data-feather="map-pin" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <span class="text-gray-300">São Paulo - SP, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card p-8 rounded-xl border border-card/50" data-aos="fade-left">
+                    <h3 class="text-2xl font-heading font-semibold mb-6">Converse com nosso Agente IA</h3>
+                    <div class="chat-container h-96 bg-dark rounded-lg p-4 mb-4 overflow-y-auto border border-card/50">
+                        <div class="chat-message bot-message bg-card p-4 rounded-lg mb-4 max-w-xs">
+                            <div class="flex items-start gap-2">
+                                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                                    <i data-feather="cpu" class="text-primary w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300">Olá! Sou o assistente virtual da AutoFluxo IA. Como posso te ajudar hoje?</p>
+                                    <div class="text-xs text-gray-500 mt-1">Agente IA • Online</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." class="form-input flex-1 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary border border-card/50">
+                        <button id="sendMessage" class="btn-primary bg-primary text-dark px-4 py-3 rounded-md font-medium hover:bg-primary/90 transition">
+                            <i data-feather="send" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                        <button class="quick-question text-xs bg-dark text-gray-300 px-3 py-2 rounded-full hover:bg-primary/20 transition">
+                            Como funciona?
+                        </button>
+                        <button class="quick-question text-xs bg-dark text-gray-300 px-3 py-2 rounded-full hover:bg-primary/20 transition">
+                            Quanto custa?
+                        </button>
+                        <button class="quick-question text-xs bg-dark text-gray-300 px-3 py-2 rounded-full hover:bg-primary/20 transition">
+                            Tem demonstração?
+                        </button>
+                    </div>
+                    <div class="mt-4 text-center text-sm text-gray-400">
+                        <p>Ou <a href="#contato" class="text-primary hover:underline">agende uma demonstração completa</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-card py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="logo-cube mr-3">
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                            <div class="logo-cube-face"></div>
+                        </div>
+                        <span class="text-xl font-heading font-semibold">AutoFluxo <span class="text-primary">IA</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Transformando negócios através da automação inteligente desde 2023.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-heading font-semibold text-gray-300 mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition text-sm">Home</a></li>
+                        <li><a href="#diferenciais" class="text-gray-400 hover:text-primary transition text-sm">Diferenciais</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-primary transition text-sm">Serviços</a></li>
+                        <li><a href="#cases" class="text-gray-400 hover:text-primary transition text-sm">Cases</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-primary transition text-sm">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-heading font-semibold text-gray-300 mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Automação de Processos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Análise Preditiva</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Agentes de IA</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Integração de Sistemas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Segurança de Dados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-heading font-semibold text-gray-300 mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark flex items-center justify-center text-gray-400 hover:text-primary transition">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark flex items-center justify-center text-gray-400 hover:text-primary transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark flex items-center justify-center text-gray-400 hover:text-primary transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/5527996959928?text=Ol%C3%A1%20vim%20do%20site%20estou%20pronto%20para%20transformar%20meu%20neg%C3%B3cio" target="_blank" class="w-10 h-10 rounded-full bg-dark flex items-center justify-center text-gray-400 hover:text-green-500 transition whatsapp-icon">
+                            <i data-feather="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#contato" class="btn-primary inline-flex items-center bg-primary text-dark px-6 py-2 rounded-md text-sm font-medium">
+                            Fale Conosco
+                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-card mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2023 AutoFluxo IA. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-primary transition text-sm">Termos de Serviço</a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition text-sm">Política de Privacidade</a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inclua o script.js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

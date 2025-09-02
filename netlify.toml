@@ -1,0 +1,58 @@
+[build]
+  # Diretório de publicação (raiz do projeto)
+  publish = "."
+
+  # Comando de build (não necessário para site estático)
+  command = "echo 'Site estático - nenhum build necessário'"
+
+[build.environment]
+  # Variáveis de ambiente (opcional)
+  NODE_VERSION = "18"
+
+# Redirects e rewrites
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Headers de segurança e performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache para assets estáticos
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Configuração para SPA (Single Page Application) - útil se expandir no futuro
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Configuração de domínio personalizado (descomente e configure quando necessário)
+# [build]
+#   publish = "."
+#   command = "echo 'Site estático'"
+#
+# [[redirects]]
+#   from = "https://autofluxoia.com/*"
+#   to = "https://www.autofluxoia.com/:splat"
+#   status = 301
+#   force = true
